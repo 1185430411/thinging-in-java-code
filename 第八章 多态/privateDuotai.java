@@ -22,4 +22,7 @@ public class privateduotai {
 private
 */
 
-//非private方法才可以被覆盖
+/*
+private方法可以被重写，但涉及多态时，private方法无法被覆盖
+非private方法才可以被覆盖
+*/
