@@ -1,0 +1,55 @@
+package Ten10;
+
+class gou{
+	protected shagou h;
+	protected class shagou{
+		public shagou() {
+			System.out.println("old");
+		}
+	}
+	public gou() {
+		System.out.println("new dog");
+		h=new shagou();
+	}
+}
+
+public class inner extends gou{
+	public class shagou /*extends gou.shagou*/{
+		public shagou() {
+			System.out.println("new");
+		}
+	}
+	public inner() {
+		System.out.println("new inner");
+	}
+	
+	public static void main(String[] args) {
+		gou g=new gou();
+		System.out.println();
+		
+		gou.shagou s=g.new shagou();
+		System.out.println();
+		
+		inner i=new inner();
+		System.out.println();
+		
+		inner.shagou s2=i.new shagou();
+		System.out.println();
+		
+		
+	}
+}
+
+/*
+测试结果：
+new dog
+old
+
+old
+
+new dog
+old
+new inner
+
+new
+*/
