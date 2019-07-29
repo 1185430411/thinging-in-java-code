@@ -20,7 +20,7 @@ class up extends father{
 
 
 public class pattern {
-	public static void way(father f,Object obj) {             //通过不同方法来调不同的方法
+	public static void way(father f,Object obj) {             //通过不同参数来调不同的方法
 		System.out.println(f.way(obj));
 	}
 	public static void main(String[] args) {
