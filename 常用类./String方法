@@ -1,0 +1,65 @@
+package learn;
+
+public class learn{
+	public static void main(String[] args) {
+		String str="JAYICE666";
+		//char charAt(int index);获取index位置的字符
+		System.out.println(str.charAt(2));   //Y
+		
+		//boolean contains(CharSequence s); 判断字符串是否包含s
+		System.out.println(str.contains("JAY"));  //true
+		System.out.println(str.contains("qq"));   //false
+		
+		//boolean endsWith(String endstr);  判断是否以某个字符串结束
+		System.out.println(str.endsWith("666"));   //true
+		
+		//boolean equalsIgnoreCase(String anotherstr); 忽略大小写判断是否相等
+		System.out.println(str.equalsIgnoreCase("jayice666"));  //true
+		
+		//byte[] getBytes(); 转化为byte数组(ASCLL码)
+		byte[] b=str.getBytes();
+		for(int i=0;i<b.length;i++) {
+			System.out.print(b[i]+" ");    //74 65 89 73 67 69 54 54 54 
+		}
+		System.out.println();
+		
+		//int indexOf(String str2); 指定字符串的位置
+		System.out.println(str.indexOf("666"));  //6
+		
+		//int indexOf(String str2,int fromindex);  指定字符串位置从指定位置开始的位置，通常用于处理字符串有重复
+		System.out.println(str.indexOf("AY", 0));  //1  
+		
+		//String replaceAll(String s1,String s2);  替换字符串中的内容
+		System.out.println(str.replace("666", "666666"));  //JAYICE666666
+		
+		//String[] split(String str); 根据传入的字符串来对原字符串进行划分
+		String str2="1,2,3,4,5,6,7,8,9,0";
+		String[] res=str2.split(",");
+		for(int i=0;i<res.length;i++) System.out.print(res[i]);//1234567890
+		System.out.println();
+		
+		//boolean startsWith(String s); 判断是否以s开头
+		System.out.println(str.startsWith("JAY"));  //true
+		
+		//String substring(int begin); 从begin开始输出字符串
+		System.out.println(str.substring(2));  //YICE666
+		
+		//String substring(int begin，int end); 从begin开始输出字符串,end结束
+		System.out.println(str.substring(2,6));  //YICE
+		
+		//char[] toCharArray(); 转换为char数组
+		char[] char1=str.toCharArray();
+		for(int i=0;i<char1.length;i++) System.out.print(char1[i]+" "); //J A Y I C E 6 6 6 
+		System.out.println();
+		
+		//String toUpperCase(); 转为大写
+		System.out.println(str.toUpperCase()); //JAYICE666
+		
+		//String toLowerCase();转为小写
+		System.out.println(str.toLowerCase()); //jayice666
+		
+		//String trim(); 去除头尾的空格
+		String str3="  jayice  ";
+		System.out.println(str3.trim());   //jayice
+	}
+}
