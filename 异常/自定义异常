@@ -1,0 +1,62 @@
+package learn;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+/*自定义一个异常
+ * 通常是继承Exception，然后写两个构造器
+ * */
+class IllegalNameException extends Exception{
+
+	/**
+	 * 
+	 */
+	static final long serialVersionUID = 1L;
+	
+	public IllegalNameException() {
+		super();
+	}
+	
+	public IllegalNameException(String msg) {
+		super(msg);
+	}
+	
+}
+
+/*
+ * throws
+ * 		用在方法声明后面，跟的是异常名
+ * 		可以跟多个异常名
+ * throw
+ * 		用在方法里面，跟的是异常对象
+ * 		只能跟一个异常对象
+ * */
+class user {
+	public static void register(String name) throws IllegalNameException {
+		if(name.length()<6) {
+			throw new IllegalNameException("用户名长度不能小于6");
+		}
+	}
+	
+}
+
+public class learn{
+	@SuppressWarnings("static-access")
+	public static void main(String[] args) {
+		user u=new user();
+		try {
+			u.register("jay");
+		}catch(IllegalNameException e) {
+			e.printStackTrace();
+		}
+	}
+}
+
+/*
+*result：
+learn.IllegalNameException: 用户名长度不能小于6
+	at learn.user.register(learn.java:27)
+	at learn.learn.main(learn.java:38)
+
+*/
