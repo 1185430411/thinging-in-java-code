@@ -5,6 +5,7 @@ import java.util.Collection;
 import java.util.Iterator;
 
 /*
+*迭代器Iterator可以直接对集合进行遍历，而无需用toArray方法转化成数组后再进行遍历
  * */
 public class learn{
 	@SuppressWarnings("unchecked")
