@@ -23,12 +23,12 @@ public class learn{
 		System.out.println(q.isEmpty());   //false
 		
 		int a=q.peek();    //获取队列头
-		System.out.println(a);
-		System.out.println(q);
+		System.out.println(a);  //2
+		System.out.println(q);  //[2, 3]
 		
 		int b=q.poll();   //队列进行出队操作，并把出队的元素返回
-		System.out.println(b);
-		System.out.println(q);
+		System.out.println(b); //2
+		System.out.println(q);  //[3]
 		
 		
 		@SuppressWarnings("unused")
@@ -43,6 +43,9 @@ public class learn{
 		System.out.println(s);   //[1, 2]
 		
 		System.out.println(s.isEmpty());   //false
+		
+		int d=s.size();
+		System.out.println(d);   //2
 		
 	}
 }
