@@ -10,7 +10,7 @@ import java.util.Random;
 public class learn{
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
-		ArrayList a=new ArrayList();
+		ArrayList a=new ArrayList();  //内容为Object
 		a.add(5);
 		a.add(4);
 		a.add("a");
