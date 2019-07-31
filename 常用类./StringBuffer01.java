@@ -2,7 +2,9 @@ package learn;
 
 /*
  * StringBuffer底层是一个char型数组，默认创建一个长度为16的char型数组，能自动通过拷贝增加数组的长度，提高效率
- * 
+ * StringBuffer类和StringBuilder类的方法相同，区别在于：
+ * 1.StringBuffer类线程安全，效率低
+ * 2.StringBuilder类线程不安全，效率高
  * */
 public class learn{
 	public static void main(String[] args) {
