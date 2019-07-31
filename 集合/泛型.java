@@ -6,14 +6,14 @@ import java.util.LinkedList;
 import java.util.List;
 
 /*
- * vector集合被用得很少
- * 了解即可
+ * 
+ * 
  * */
 public class learn{
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		@SuppressWarnings("unused")
-		List<Integer> lis=new ArrayList<>();
+		List<Integer> lis=new ArrayList<>();  //jdk7新特性。以前必须要List<Integer> lis=new ArrayList<Integer>();
 		lis.add(1);
 		lis.add(2);
 		lis.add("a");   //Exception
