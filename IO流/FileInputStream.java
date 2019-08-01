@@ -12,7 +12,8 @@ public class IOTesr {
 	public static void main(String[] args) {
 		FileInputStream fis=null;
 		try {
-			fis=new FileInputStream("D:\\jay.txt");
+			fis=new FileInputStream("D:"+File.Separator+"jay.txt");  //File类的Separator用于解决转换符的问题。可以使语言再不同的操作系统如Linux环境下也能正常编译通过
+	
 			int temp=0;
 			byte[] b=new byte[4];
 			
