@@ -4,6 +4,10 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+*HashMap线程不安全，效率高，key和value可以为null
+*HashTable线程安全，效率低，key和bvalue不可以存放null值
+*/
 public class learn{
 	public static void main(String[] args) {
 		Map<Integer,String> map=new HashMap<>();
