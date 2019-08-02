@@ -37,12 +37,12 @@ public class learn{
 		
 		//模拟栈
 		//push
-		list.add(list.size()-1, "e");
-		System.out.println(list); //[a, e, d]
+		list.add("e");
+		System.out.println(list); //[a, d, e]
 		
 		//pop();
 		list.remove(list.size()-1);
-		System.out.println(list); //[a, e]
+		System.out.println(list); //[a, d]
 
 	}
 }
