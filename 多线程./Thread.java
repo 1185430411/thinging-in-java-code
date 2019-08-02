@@ -5,10 +5,11 @@ package JAY01;
  * 
  * @author 11854
  *使用Thread来创建多线程方法：
- *1.继承Thread类
+ *1.写一个自定义类，继承Thread类
  *2.重写run方法
  *3.在run方法里编写线程要执行的内容
- *34.调用start函数进行开启线程
+ *6.创建自定义类对象
+ *5.调用start函数进行开启线程
  */
 class myThread extends Thread{
 	public void run() {
