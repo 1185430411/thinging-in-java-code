@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+	<book id="1001">
+		<name>java教程</name>
+		<price>100</price>
+	</book>
+	<book id="1002">
+		<name>c++教程</name>
+		<price>20</price>
+	</book>
+	<book id="1003">
+		<name>spring教程</name>
+		<price>30</price>
+	</book>
+</books>
