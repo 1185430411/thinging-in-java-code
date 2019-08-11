@@ -9,6 +9,20 @@ import javax.servlet.ServletRequestListener;
 *  重写接口中的方法
 * 在web.xml文件中配置监听器
  * */
+
+/*
+监听web对象创建与销毁的监听器
+ServletContextListener
+HttpSessionListener
+ServletRequestListener
+监听web对象属性变化的监听器
+ServletContextAttributeListener
+HttpSessionAttributeListener
+ServletRequestAttributeListener
+监听session绑定javaBean操作的监听器
+HttpSessionBindingListener
+HttpSessionActivationListener
+*/
 public class test01 implements ServletRequestListener{
 
 	@Override
