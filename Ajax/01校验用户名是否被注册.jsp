@@ -14,7 +14,7 @@
 </body>
 <script type="text/javascript">
 	window.onload = function() {
-		var nameElement = document.getElementById("name");
+		var nameElement = document.getElementById("username");
 		//绑定onblur事件
 		nameElement.onblur = function() {
 			//this等价于nameElement
@@ -35,15 +35,14 @@
 							msg.innerHTML = "<font color='red'>用户名已存在</font>";
 
 						} else {
-							msg.innerHTML = "可以使用";
+							msg.innerHTML = "<font color='green'>用户名可以使用</font>";
 						}
 					}
 				}
 			}
 
 			//创建连接
-			xhr.open("get", "${pageContext.request.contextPath }/regist?name="
-					+ name);
+			xhr.open("get", "${pageContext.request.contextPath }/regist?name="+ name);
 			//发送请求
 			xhr.send(null);
 		}
