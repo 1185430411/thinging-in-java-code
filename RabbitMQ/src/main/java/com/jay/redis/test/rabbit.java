@@ -20,7 +20,7 @@ public class rabbit {
     @GetMapping("/test1")
     public String sendDirectMessage(){
         String messageId = String.valueOf(UUID.randomUUID());
-        String messageData = "test message, hello";
+        String messageData = "test message, hello";  //这里也可以传一个对象，但是该对象要继承Serializable接口，并要有serialVersionUID,也就是说该对象要可以被序列化
         String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
         Map<String,Object> map=new HashMap<>();
         map.put("messageId",messageId);
